@@ -5,6 +5,8 @@ import com.wsy.common.Response;
 
 public interface MessageProtocol {
 
+    String getProtocolName();
+
     Request unmarshallingRequest(byte[] data) throws Exception;
 
     byte[] marshallingRequest(Request request) throws Exception;

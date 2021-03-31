@@ -14,4 +14,10 @@ public class ServiceObject {
 
     private Object object;
 
+    public ServiceObject(String name, Class<?> inter, Object object){
+        this.name = name;
+        this.inter = inter;
+        this.object = object;
+    }
+
 }
